@@ -1,0 +1,641 @@
+/* =========================================================
+   CONTAGEM360
+   LOGIN
+========================================================= */
+
+
+/* =========================================================
+   VARIÁVEIS DO PROJETO
+========================================================= */
+
+:root {
+
+    --azul-escuro: #061b49;
+    --azul-principal: #0759b8;
+    --azul-claro: #0d6efd;
+
+    --laranja: #f97316;
+    --laranja-hover: #ea580c;
+
+    --branco: #ffffff;
+
+    --cinza-fundo: #f4f7fb;
+    --cinza-texto: #475569;
+    --cinza-borda: #dbe3ef;
+
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+
+    margin: 0;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4f7fb 0%,
+            #ffffff 50%,
+            #eef5ff 100%
+        );
+
+    color: var(--cinza-texto);
+
+}
+
+
+/* =========================================================
+   PÁGINA
+========================================================= */
+
+.login-page {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* Decoração superior */
+
+.login-page::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    background: var(--azul-escuro);
+
+    border-radius: 50%;
+
+    top: -260px;
+
+    left: -180px;
+
+    opacity: .08;
+
+}
+
+
+/* Decoração inferior */
+
+.login-page::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    background: var(--laranja);
+
+    border-radius: 50%;
+
+    bottom: -220px;
+
+    right: -150px;
+
+    opacity: .08;
+
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.login-card {
+
+    position: relative;
+
+    z-index: 2;
+
+    background: var(--branco);
+
+    border: 1px solid rgba(6, 27, 73, .08);
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 20px 60px rgba(6, 27, 73, .12);
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-contagem {
+
+    display: inline-block;
+
+    font-size: 31px;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+
+}
+
+
+.logo-contagem-text {
+
+    color: var(--azul-escuro);
+
+}
+
+
+.logo-360 {
+
+    color: var(--laranja);
+
+}
+
+
+.logo-subtitle {
+
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    color: #64748b;
+
+}
+
+
+/* =========================================================
+   ÍCONE
+========================================================= */
+
+.login-icon {
+
+    width: 72px;
+
+    height: 72px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f1ff,
+            #f5f9ff
+        );
+
+    color: var(--azul-principal);
+
+    font-size: 42px;
+
+}
+
+
+/* =========================================================
+   TÍTULOS
+========================================================= */
+
+.login-title {
+
+    margin-bottom: 8px;
+
+    color: var(--azul-escuro);
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+}
+
+
+.login-description {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #64748b;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.form-label {
+
+    color: var(--azul-escuro);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.input-group-text {
+
+    min-width: 45px;
+
+    justify-content: center;
+
+    background: #f8fafc;
+
+    border-color: var(--cinza-borda);
+
+    color: var(--azul-principal);
+
+}
+
+
+.form-control {
+
+    height: 48px;
+
+    border-color: var(--cinza-borda);
+
+    font-size: 14px;
+
+}
+
+
+.form-control:focus {
+
+    border-color: var(--azul-principal);
+
+    box-shadow:
+        0 0 0 .2rem rgba(7, 89, 184, .12);
+
+}
+
+
+/* =========================================================
+   BOTÃO MOSTRAR SENHA
+========================================================= */
+
+.btn-password {
+
+    border: 1px solid var(--cinza-borda);
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+}
+
+
+.btn-password:hover {
+
+    color: var(--azul-principal);
+
+    background: #eef5ff;
+
+}
+
+
+/* =========================================================
+   ESQUECI A SENHA
+========================================================= */
+
+.forgot-password {
+
+    font-size: 12px;
+
+    color: var(--azul-principal);
+
+    text-decoration: none;
+
+}
+
+
+.forgot-password:hover {
+
+    color: var(--laranja);
+
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.form-check-input {
+
+    border-color: #b8c4d5;
+
+}
+
+
+.form-check-input:checked {
+
+    background-color: var(--azul-principal);
+
+    border-color: var(--azul-principal);
+
+}
+
+
+.form-check-label {
+
+    font-size: 13px;
+
+    color: #64748b;
+
+}
+
+
+/* =========================================================
+   BOTÃO LOGIN
+========================================================= */
+
+.btn-login {
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--azul-principal),
+            var(--azul-claro)
+        );
+
+    color: var(--branco);
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: all .25s ease;
+
+}
+
+
+.btn-login:hover {
+
+    color: var(--branco);
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--azul-escuro),
+            var(--azul-principal)
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(7, 89, 184, .22);
+
+}
+
+
+/* =========================================================
+   ÁREA DE CADASTRO
+========================================================= */
+
+.register-area {
+
+    margin-top: 25px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #edf1f6;
+
+    font-size: 13px;
+
+    color: #64748b;
+
+}
+
+
+.register-link {
+
+    color: var(--laranja);
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+
+.register-link:hover {
+
+    color: var(--laranja-hover);
+
+}
+
+
+/* =========================================================
+   DIVISOR
+========================================================= */
+
+.login-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 22px 0;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+
+}
+
+
+.login-divider::before,
+.login-divider::after {
+
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #e5eaf1;
+
+}
+
+
+/* =========================================================
+   VOLTAR
+========================================================= */
+
+.back-link {
+
+    color: var(--azul-principal);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.back-link:hover {
+
+    color: var(--laranja);
+
+}
+
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+
+.login-footer {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 18px;
+
+}
+
+
+.footer-brand {
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: var(--azul-escuro);
+
+}
+
+
+.footer-brand strong {
+
+    color: var(--laranja);
+
+}
+
+
+.login-footer p {
+
+    margin-top: 4px;
+
+    margin-bottom: 0;
+
+    font-size: 11px;
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================================
+   VALIDAÇÃO JQUERY
+========================================================= */
+
+label.error {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #dc3545;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+}
+
+
+.form-control.error {
+
+    border-color: #dc3545;
+
+}
+
+
+.form-control.valid {
+
+    border-color: #198754;
+
+}
+
+
+.input-group .form-control.error {
+
+    border-color: #dc3545;
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .login-card {
+
+        padding: 28px 22px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .logo-contagem {
+
+        font-size: 27px;
+
+    }
+
+
+    .login-title {
+
+        font-size: 22px;
+
+    }
+
+}
