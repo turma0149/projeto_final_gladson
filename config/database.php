@@ -11,13 +11,11 @@ function conectarBanco()
     // DADOS DO BANCO
     // =====================================
 
-    $host = "localhost";
 
-    $banco = "contagem360";
-
-    $usuario = "root";
-
-    $senha = "";
+    $host = "sql310.infinityfree.com";
+    $banco = "if0_42917264_contagem360";
+    $usuario = "if0_42917264";
+    $senha = "BU8mNvO3sz9";
 
 
     // =====================================
